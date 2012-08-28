@@ -9,8 +9,8 @@
                :rnrs-compat
                :named-readtables)
   :components ((:file "package")
-               (:file "readtable")
                (:file "srfi-105")
+               (:file "readtable")
                (:file "test")))
 
 (defmethod perform ((o test-op) (c (eql (find-system :srfi-105))))
