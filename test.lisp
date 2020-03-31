@@ -1,9 +1,10 @@
-(cl:in-package :srfi-105.internal)
+(cl:in-package "https://github.com/g000001/srfi-105")
+
+
 (in-readtable :srfi-105)
 
-(def-suite srfi-105)
 
-(in-suite srfi-105)
+(def-suite* srfi-105)
 
 
 (test :simple
@@ -24,6 +25,4 @@
   )
 
 
-;;; eof
-
-
+;;; *EOF*

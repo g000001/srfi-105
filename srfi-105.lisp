@@ -1,6 +1,6 @@
 ;;;; srfi-105.lisp
 
-(cl:in-package :srfi-105.internal)
+(cl:in-package "https://github.com/g000001/srfi-105")
 
 
 ; Return true if lyst has an even # of parameters, and the (alternating)

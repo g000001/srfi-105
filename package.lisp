@@ -2,10 +2,9 @@
 
 (cl:in-package :cl-user)
 
-(defpackage :srfi-105
-  (:use)
-  (:export))
 
-(defpackage :srfi-105.internal
-  (:use :srfi-105 :rnrs-user :named-readtables :fiveam))
+(defpackage "https://github.com/g000001/srfi-105"
+  (:use rnrs-user named-readtables fiveam))
 
+
+;;; *EOF*

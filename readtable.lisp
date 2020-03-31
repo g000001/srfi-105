@@ -1,9 +1,16 @@
 ;;;; readtable.lisp
 
-(cl:in-package :cl-user)
+(cl:in-package "https://github.com/g000001/srfi-105")
+
+
 (named-readtables:in-readtable :common-lisp)
 
-(named-readtables:defreadtable :srfi-105  (:merge :standard)
-  (:macro-char #\{ #'srfi-105.internal::|{-reader|)
+
+(defreadtable :srfi-105
+  (:merge :standard)
+  (:macro-char #\{ #'|{-reader|)
   (:syntax-from :standard #\) #\})
   (:case :upcase))
+
+
+;;; *EOF*
