@@ -13,7 +13,7 @@
   (is (equal '{a * {b + c}}
              '(* A (+ B C))))
   ;; {x eqv? `a} maps to (eqv? x `a) 
-  (is (equal '{x eqv? `a} '(EQV? X 'A)))
+  (is (equal '{x eqv? `a} '(EQV? X `A)))
   ;; {(- a) / b} maps to (/ (- a) b)
   (is (equal '{(- a) / b} '(/ (- A) B)))
   ;; {(f a b) + (g h)} maps to (+ (f a b) (g h))
